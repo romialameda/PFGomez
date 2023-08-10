@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+/* NAVBAR */
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.fuentes{
+    font-size: 1rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+
+.fuentes li a:hover{
+    background-color: #f4f4fa;
+
+}
+
+/* ENCABEZADO */
+
+.imagenFondo {
+    display: flex; 
+    background-image: url(../img/guarderia-inicio.jpg);
+    background-size: cover;
+    height: calc(100vh - 100px);
+    margin: 5px 0px 100px 0px;
+}
+
+.cajaIntro {
+    border-radius: 4px;
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 20px 2px 40px;
+    opacity: 85%;
+    max-width: 90%;
+}
+
+.bienvenidoA {
+    text-align: center;
+    font-size: 23px;
+}
+
+.titulo {
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.objetivo {
+    text-align: center;
+    font-size: 30px;
+}
+
+.jugar {
+    color: lightgreen;
+}
+
+.aprender {
+    color: lightskyblue;
+}
+
+.crecer {
+    color: lightcoral;
+}
+
+/* */
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+}
+
+/* Colors */
+:root {
+    --color-default: #212529;
+    --color-primary: lightcoral;
+    --color-secondary: #37373f;
+}
+
+/* Smooth scroll behavior */
+
+
+body {
+    font-family: var(--font-default);
+    color: var(--color-default);
+}
+
+h2 {
+    font-family: var(--font-secondary);
+}
+
+section {
+    overflow: hidden;
+    padding: 80px 0;
+    background-color: lightblue;
+}
+
+.section-bg {
+    background-color: #7f7f90;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #7f7f90;
+    text-transform: uppercase;
+    font-family: var(--font-default);
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+.section-header p span {
+    color: lightcoral;
+}
+
+.blanco{
+    background-color: #fff;
+    /* margin-top: 0;
+    margin-bottom: 0; */
+    padding-top: 0;
+}
+
+.tituloAbout{
+    text-transform: uppercase;
+}
+
+.about .about-img {
+    min-height: 500px;
+}
+
+.about .content ul {
+    padding: 0;
+}
+
+.about .content ul li {
+    padding: 0 0 8px 26px;
+    position: relative;
+}
+
+.about .content ul i {
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: -3px;
+    color: var(--color-primary);
+}
+
+/* Reseñas */
+.testimonials .testimonial-wrap {
+    padding-left: 50px;
+  }
+  
+  .testimonials .testimonials-carousel,
+  .testimonials .testimonials-slider {
+    overflow: hidden;
+  }
+  
+  .testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 30px 30px 30px 60px;
+    margin: 30px 15px;
+    min-height: 200px;
+    border: 1px solid #eef0ef;
+    position: relative;
+    background: #fff;
+  }
+  
+  .testimonials .testimonial-item .testimonial-img {
+    width: 170px;
+    border-radius: 10px;
+    border: 5px solid #eef0ef;
+    position: absolute;
+    right: -10px;
+    top: -27px;
+  }
+  
+  .testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #111;
+  }
+  
+  .testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+  }
+  
+  .testimonials .testimonial-item .quote-icon-left,
+  .testimonials .testimonial-item .quote-icon-right {
+    color: #c1ecce;
+    font-size: 26px;
+  }
+  
+  .testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+  }
+  
+  .testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 15px auto 15px auto;
+  }
+  
+  .testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #5fcf80;
+  }
+  
+  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #5fcf80;
+  }
+  
+  @media (max-width: 767px) {
+    .testimonials .testimonial-wrap {
+      padding-left: 0;
+    }
+  
+    .testimonials .testimonials-carousel,
+    .testimonials .testimonials-slider {
+      overflow: hidden;
+    }
+  
+    .testimonials .testimonial-item {
+      padding: 30px;
+      margin: 15px;
+    }
+  
+    .testimonials .testimonial-item .testimonial-img {
+      position: static;
+      left: auto;
+    }
+  }
+
+/*  */
+
+
+/************** CARPETA HTML ********************/
+.tituloDos {
+    margin-top: 50px;
+}
+
+.objetivoDos {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.tituloSecundario {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/******* PROGRAMA *******/
+
+/* GRILLA ACTIVIDADES*/
+
+/* CELULARES */
+@media (max-width: 500px){
+  .actividad {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      margin-bottom: 100px;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 501px) and (max-width: 1023px){
+  .actividad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+}
+
+/* DESKTOP */
+@media (min-width: 1024px){
+  .actividad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+}
+
+.act {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.actImagen {
+    width: 98px;
+    height: 90px;
+    align-self: center;
+    margin: auto;
+}
+
+.actTitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.actDescripcion {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/**** EVENTOS ****/
+.colorBtn{
+    background-color: lightgreen;
+}
+
+.events .card {
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .events .card-img {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+  }
+  
+  .events .card-img img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .events .card-body {
+    z-index: 10;
+    background: #fff;
+    border-top: 4px solid #fff;
+    padding: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+  }
+  
+  .events .card-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .events .card-title a {
+    color: #37423b;
+    transition: 0.3s;
+  }
+  
+  .events .card-text {
+    color: #5e5e5e;
+  }
+  
+  .events .read-more a {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  
+  .events .read-more a:hover {
+    color: lightgreen;
+  }
+  
+  .events .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .events .card:hover .card-body {
+    border-color: lightgreen;
+  }
+  
+  .events .card:hover .card-body .card-title a {
+    color: lightgreen;
+  }
+
+/*** NOTICIAS *****/
+#seccionNoticias {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#seccionNoticia .noticiaTexto p {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.noticiasTexto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloNoticia {
+    line-height: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.imgNoticia {
+    width: 300px;
+    margin: 20px 20px;
+    margin-right: 20px;
+}
+
+.btnNot {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    margin: 0 auto;
+}
+
+/***** CONTACTO ******/
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #394464;
+}
+
+.campos {
+    display: block;
+    width: 500pX;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btnFormulario {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer
+}
+
+.divContacto {
+    margin-left: 20px;
+}
+
+.divContacto p,
+.divContacto h3 {
+    text-align: left;
+}
