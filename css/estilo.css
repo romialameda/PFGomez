@@ -11,18 +11,18 @@ body {
 }
 
 /* NAVBAR */
-.logo {
+.navbar .logo {
     width: 150px;
     cursor: pointer;
 }
 
-.fuentes{
+.navbar .fuentes{
     font-size: 1rem;
     padding-left: 2rem;
     text-transform: uppercase;
 }
 
-.fuentes li a:hover{
+.navbar .fuentes li a:hover{
     background-color: #f4f4fa;
 
 }
@@ -147,8 +147,6 @@ section {
 
 .blanco{
     background-color: #fff;
-    /* margin-top: 0;
-    margin-bottom: 0; */
     padding-top: 0;
 }
 
@@ -246,18 +244,6 @@ section {
   .testimonials .swiper-pagination {
     margin-top: 20px;
     position: relative;
-  }
-  
-  .testimonials .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #5fcf80;
-  }
-  
-  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #5fcf80;
   }
   
   @media (max-width: 767px) {
@@ -440,40 +426,32 @@ section {
 
 /*** NOTICIAS *****/
 #seccionNoticias {
-    margin: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#seccionNoticia .noticiaTexto p {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-
-}
-
-.noticiasTexto{
+  margin: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.txtNot {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
 }
 
 .tituloNoticia {
-    line-height: 1.2em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 45px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 45px;
 }
 
 .imgNoticia {
-    width: 300px;
-    margin: 20px 20px;
-    margin-right: 20px;
+  width: 300px;
+  margin: 20px 20px;
 }
 
 .btnNot {
@@ -483,6 +461,7 @@ section {
     font-weight: bold;
     border: none;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 /***** CONTACTO ******/
@@ -512,8 +491,6 @@ label {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 20px;
-    margin-top: 10px;
-    cursor: pointer
 }
 
 .divContacto {
