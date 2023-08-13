@@ -1,33 +1,77 @@
+@media (max-width: 500px) {
+  .actividad {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .actividad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .actividad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 body {
-  font-family: 'Roboto', sans-serif;
-  ;
+  font-family: "Roboto", sans-serif;
 }
 
-/* NAVBAR */
+.tituloPagina .tituloDos {
+  line-height: 1.2em;
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.tituloPagina .objetivoDos {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.tituloPagina .objetivoDos .jugar {
+  color: lightgreen;
+}
+.tituloPagina .objetivoDos .aprender {
+  color: lightskyblue;
+}
+.tituloPagina .objetivoDos .crecer {
+  color: lightcoral;
+}
+.tituloPagina .tituloSecundario {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
 .navbar .logo {
   width: 150px;
   cursor: pointer;
 }
-
 .navbar .fuentes {
   font-size: 1rem;
   padding-left: 2rem;
   text-transform: uppercase;
 }
-
 .navbar .fuentes li a:hover {
   background-color: #f4f4fa;
-
 }
-
-/* ENCABEZADO */
 
 .imagenFondo {
   display: flex;
@@ -36,7 +80,6 @@ body {
   height: calc(100vh - 100px);
   margin: 5px 0px 100px 0px;
 }
-
 .imagenFondo .cajaIntro {
   border-radius: 4px;
   height: 250px;
@@ -52,56 +95,37 @@ body {
   opacity: 85%;
   max-width: 90%;
 }
-
 .imagenFondo .cajaIntro .caja .bienvenidoA {
   text-align: center;
   font-size: 23px;
 }
-
 .imagenFondo .cajaIntro .caja .titulo {
   line-height: 1.2em;
   text-align: center;
   font-size: 45px;
   text-transform: uppercase;
 }
-
 .imagenFondo .cajaIntro .caja .objetivo {
   text-align: center;
   font-size: 30px;
 }
-
 .imagenFondo .cajaIntro .caja .objetivo .jugar {
   color: lightgreen;
 }
-
 .imagenFondo .cajaIntro .caja .objetivo .aprender {
   color: lightskyblue;
 }
-
 .imagenFondo .cajaIntro .caja .objetivo .crecer {
   color: lightcoral;
 }
 
-/* */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Amatic SC", sans-serif;
   --font-secondary: "Inter", sans-serif;
-}
-
-/* Colors */
-:root {
   --color-default: #212529;
   --color-primary: lightcoral;
   --color-secondary: #37373f;
-}
-
-/* Smooth scroll behavior */
-
-
-body {
-  font-family: var(--font-default);
-  color: var(--color-default);
 }
 
 h2 {
@@ -122,7 +146,6 @@ section {
   text-align: center;
   padding-bottom: 30px;
 }
-
 .section-header h2 {
   font-size: 13px;
   letter-spacing: 1px;
@@ -133,14 +156,12 @@ section {
   text-transform: uppercase;
   font-family: var(--font-default);
 }
-
 .section-header p {
   margin: 0;
   font-size: 48px;
   font-weight: 400;
   font-family: var(--font-primary);
 }
-
 .section-header p span {
   color: lightcoral;
 }
@@ -157,16 +178,13 @@ section {
 .about .about-img {
   min-height: 500px;
 }
-
 .about .content ul {
   padding: 0;
 }
-
 .about .content ul li {
   padding: 0 0 8px 26px;
   position: relative;
 }
-
 .about .content ul i {
   position: absolute;
   font-size: 20px;
@@ -175,16 +193,15 @@ section {
   color: var(--color-primary);
 }
 
-/* Reseñas */
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
-
-.testimonials .testimonials-carousel,
+.testimonials .testimonials-carousel {
+  overflow: hidden;
+}
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
-
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px 30px 30px 60px;
@@ -194,7 +211,6 @@ section {
   position: relative;
   background: #fff;
 }
-
 .testimonials .testimonial-item .testimonial-img {
   width: 170px;
   border-radius: 10px;
@@ -203,141 +219,39 @@ section {
   right: -10px;
   top: -27px;
 }
-
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
-
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #999;
   margin: 0;
 }
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left {
   color: #c1ecce;
   font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
-
 .testimonials .testimonial-item .quote-icon-right {
+  color: #c1ecce;
+  font-size: 26px;
   display: inline-block;
   right: -5px;
   position: relative;
   top: 10px;
 }
-
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 15px auto 15px auto;
 }
-
 .testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
-}
-
-@media (max-width: 767px) {
-  .testimonials .testimonial-wrap {
-    padding-left: 0;
-  }
-
-  .testimonials .testimonials-carousel,
-  .testimonials .testimonials-slider {
-    overflow: hidden;
-  }
-
-  .testimonials .testimonial-item {
-    padding: 30px;
-    margin: 15px;
-  }
-
-  .testimonials .testimonial-item .testimonial-img {
-    position: static;
-    left: auto;
-  }
-}
-
-/*  */
-
-
-/************** CARPETA HTML ********************/
-
-.tituloPagina .tituloDos {
-  line-height: 1.2em;
-  text-align: center;
-  font-size: 45px;
-  text-transform: uppercase;
-  margin-top: 50px;
-}
-
-.tituloPagina .objetivoDos {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
-
-.tituloPagina .objetivoDos .jugar {
-  color: lightgreen;
-}
-
-.tituloPagina .objetivoDos .aprender {
-  color: lightskyblue;
-}
-
-.tituloPagina .objetivoDos .crecer {
-  color: lightcoral;
-}
-
-.tituloPagina .tituloSecundario {
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-/******* PROGRAMA *******/
-
-/* GRILLA ACTIVIDADES*/
-
-/* CELULARES */
-@media (max-width: 500px) {
-  .actividad {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    margin-bottom: 100px;
-  }
-}
-
-/* TABLETS */
-@media (min-width: 501px) and (max-width: 1023px) {
-  .actividad {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-bottom: 100px;
-  }
-}
-
-/* DESKTOP */
-@media (min-width: 1024px) {
-  .actividad {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 100px;
-  }
 }
 
 .actividad .act {
@@ -347,47 +261,46 @@ section {
   padding: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .actividad .act .actImagen {
   width: 98px;
   height: 90px;
   align-self: center;
   margin: auto;
 }
-
 .actividad .act .actTitulo {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
 }
-
 .actividad .act .actDescripcion {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 20px;
 }
 
-
-/**** EVENTOS ****/
-.events .tituloEvento{
+.events .tituloEvento {
   line-height: 1.2em;
   text-align: center;
   font-size: 45px;
   text-transform: uppercase;
   margin-top: 50px;
 }
-.colorBtn {
-  background-color: lightgreen;
-}
-
 .events .card {
   border: 0;
   padding: 0 30px;
   margin-bottom: 60px;
   position: relative;
 }
-
+.events .card:hover img {
+  transform: scale(1.1);
+}
+.events .card:hover .card-body {
+  border-color: lightgreen;
+}
+.events .card:hover .card-body .card-title a {
+  color: lightgreen;
+}
 .events .card-img {
   width: calc(100% + 60px);
   margin-left: -30px;
@@ -395,12 +308,10 @@ section {
   z-index: 9;
   border-radius: 0;
 }
-
 .events .card-img img {
   max-width: 100%;
   transition: all 0.3s ease-in-out;
 }
-
 .events .card-body {
   z-index: 10;
   background: #fff;
@@ -410,22 +321,18 @@ section {
   margin-top: -60px;
   transition: 0.3s;
 }
-
 .events .card-title {
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
 }
-
 .events .card-title a {
   color: #37423b;
   transition: 0.3s;
 }
-
 .events .card-text {
   color: #5e5e5e;
 }
-
 .events .read-more a {
   color: #777777;
   text-transform: uppercase;
@@ -433,24 +340,14 @@ section {
   font-size: 12px;
   transition: 0.3s;
 }
-
 .events .read-more a:hover {
   color: lightgreen;
 }
 
-.events .card:hover img {
-  transform: scale(1.1);
+.colorBtn {
+  background-color: lightgreen;
 }
 
-.events .card:hover .card-body {
-  border-color: lightgreen;
-}
-
-.events .card:hover .card-body .card-title a {
-  color: lightgreen;
-}
-
-/*** NOTICIAS *****/
 #seccionNoticias {
   margin: 50px;
   display: flex;
@@ -460,21 +357,17 @@ section {
   background-color: aliceblue;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 #seccionNoticias .txtNot {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
-
 }
-
 #seccionNoticias .tituloNoticia {
   line-height: 1.2em;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 45px;
 }
-
 #seccionNoticias .btnNot {
   display: block;
   padding: 10px 20px;
@@ -484,8 +377,9 @@ section {
   margin: 0 auto;
   margin-top: 10px;
 }
-
 #seccionNoticias .imgNoticia {
   width: 300px;
   margin: 20px 20px;
 }
+
+/*# sourceMappingURL=estilo.css.map */

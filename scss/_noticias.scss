@@ -1,0 +1,37 @@
+#seccionNoticias {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-color_6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    .txtNot {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .tituloNoticia {
+        line-height: 1.2em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+
+    .btnNot {
+        display: block;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .imgNoticia {
+        width: 300px;
+        margin: 20px 20px;
+    }
+}

@@ -1,0 +1,29 @@
+.actividad {
+    .act {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+        .actImagen {
+            width: 98px;
+            height: 90px;
+            align-self: center;
+            margin: auto;
+        }
+
+        .actTitulo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .actDescripcion {
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}

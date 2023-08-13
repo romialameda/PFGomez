@@ -1,0 +1,18 @@
+.navbar {
+	.logo {
+		width: 150px;
+		cursor: pointer;
+	}
+	.fuentes {
+		font-size: 1rem;
+		padding-left: 2rem;
+		text-transform: uppercase;
+		li {
+			a {
+				&:hover {
+					background-color: $background-color_1;
+				}
+			}
+		}
+	}
+}
