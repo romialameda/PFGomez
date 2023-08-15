@@ -28,10 +28,15 @@
         border: none;
         margin: 0 auto;
         margin-top: 10px;
+        @include btnGradiente
     }
 
     .imgNoticia {
         width: 300px;
         margin: 20px 20px;
+    }
+
+    .imgNoticia:hover{
+        width: 450px;
     }
 }

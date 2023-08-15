@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programa previsto para la Guarderia Coder">
+    
     <title>Guarderia Coder- Inicio</title>
     <link rel="shortcut icon" href="../img/logo.png">
 
@@ -13,11 +15,17 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 
 <body>
 
     <header class="navbar navbar-expand-lg">
+
+        <!-- NAVBAR -->
         <nav class="container-fluid">
             <a class="navbar-brand" href="#"> <img src="../img/logo.png" alt="Logo Guarderia Coder" class="logo">
             </a>
@@ -46,56 +54,74 @@
                 </ul>
             </div>
         </nav>
+        <!-- FIN DEL NAVBAR -->
     </header>
 
-    <div class="tituloPagina">
-        <h1 class="tituloDos"> Guarderia Coder </h1>
+    <main>
+        <!-- TITULO GENERAL DE PAGINA SECUNDARIA -->
+        <div class="tituloPagina">
+            <h1 class="tituloDos"> Guarderia Coder </h1>
 
-        <p class="objetivoDos">
-            <span class="jugar"> Jugar.</span>
-            <span class="aprender"> Aprender.</span>
-            <span class="crecer"> Crecer</span>
-        </p>
-        <h2 class="tituloSecundario">Actividades</h2>
-    </div>
-
-    <div class="actividad">
-        <div class="act">
-            <img class="actImagen" src="../img/arte.png" alt="lapices">
-            <h3 class="actTitulo">ARTE</h3>
-            <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia sunt sint impedit suscipit! Odio!</p>
+            <p class="objetivoDos">
+                <span class="jugar"> Jugar.</span>
+                <span class="aprender"> Aprender.</span>
+                <span class="crecer"> Crecer</span>
+            </p>
+            <h2 class="tituloSecundario">Actividades</h2>
         </div>
 
-        <div class="act">
-            <img class="actImagen" src="../img/musica.png" alt="tambor">
-            <h3 class="actTitulo">MUSICA</h3>
-            <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia sunt sint impedit suscipit! Odio!</p>
-        </div>
+        <!-- ACTIVIDADES DEL PROGRAMA -->
+        <div class="actividad">
+            <div class="act" data-aos="fade-right">
+                <img class="actImagen" src="../img/arte.png" alt="lapices">
+                <h3 class="actTitulo">ARTE</h3>
+                <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste
+                    eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia
+                    sunt sint impedit suscipit! Odio!</p>
+            </div>
 
-        <div class="act">
-            <img class="actImagen" src="../img/juegos.png" alt="bicicleta">
-            <h3 class="actTitulo">JUEGOS AL AIRE LIBRE</h3>
-            <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia sunt sint impedit suscipit! Odio!</p>
-        </div>
+            <div class="act" data-aos="fade-up">
+                <img class="actImagen" src="../img/musica.png" alt="tambor">
+                <h3 class="actTitulo">MUSICA</h3>
+                <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste
+                    eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia
+                    sunt sint impedit suscipit! Odio!</p>
+            </div>
 
-        <div class="act">
-            <img class="actImagen" src="../img/letras.png" alt="bloques juguete">
-            <h3 class="actTitulo">LETRAS</h3>
-            <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia sunt sint impedit suscipit! Odio!</p>
-        </div>
+            <div class="act" data-aos="fade-left">
+                <img class="actImagen" src="../img/juegos.png" alt="bicicleta">
+                <h3 class="actTitulo">JUEGOS AL AIRE LIBRE</h3>
+                <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste
+                    eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia
+                    sunt sint impedit suscipit! Odio!</p>
+            </div>
 
-        <div class="act">
-            <img class="actImagen" src="../img/numeros.png" alt="contador numeros">
-            <h3 class="actTitulo">NUMEROS</h3>
-            <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia sunt sint impedit suscipit! Odio!</p>
-        </div>
+            <div class="act" data-aos="fade-right">
+                <img class="actImagen" src="../img/letras.png" alt="bloques juguete">
+                <h3 class="actTitulo">LETRAS</h3>
+                <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste
+                    eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia
+                    sunt sint impedit suscipit! Odio!</p>
+            </div>
 
-        <div class="act">
-            <img class="actImagen" src="../img/movimientos.png" alt="pelota">
-            <h3 class="actTitulo">MOVIMIENTOS</h3>
-            <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia sunt sint impedit suscipit! Odio!</p>
+            <div class="act" data-aos="fade-up">
+                <img class="actImagen" src="../img/numeros.png" alt="contador numeros">
+                <h3 class="actTitulo">NUMEROS</h3>
+                <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste
+                    eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia
+                    sunt sint impedit suscipit! Odio!</p>
+            </div>
+
+            <div class="act" data-aos="fade-left">
+                <img class="actImagen" src="../img/movimientos.png" alt="pelota">
+                <h3 class="actTitulo">MOVIMIENTOS</h3>
+                <p class="actDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio modi iste
+                    eligendi. Facilis, sit, possimus consectetur voluptate ad amet tempore modi dolore quo quas mollitia
+                    sunt sint impedit suscipit! Odio!</p>
+            </div>
         </div>
-    </div>
+        <!-- FIN DE LAS ACTIVIDADES DEL PROGRAMA -->
+    </main>
 
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -107,9 +133,17 @@
         </ul>
         <p class="text-center text-body-secondary">&copy; 2023 Guarderia Coder</p>
     </footer>
+
     <!-- JS BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <!-- JS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

@@ -42,3 +42,7 @@ body {
     text-transform: uppercase;
   }
 }
+
+@mixin btnGradiente{
+  background: linear-gradient(to right, rgb(191, 225, 236), #eef0ef);
+}

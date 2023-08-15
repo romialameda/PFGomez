@@ -22,6 +22,11 @@
     margin-bottom: 100px;
   }
 }
+@media (max-width: 460px) {
+  .testimonial-img {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +87,7 @@ body {
 }
 .imagenFondo .cajaIntro {
   border-radius: 4px;
-  height: 250px;
+  height: 270px;
   width: 500px;
   margin: auto;
   background-color: #fff;
@@ -179,7 +184,7 @@ section {
   min-height: 500px;
 }
 .about .content ul {
-  padding: 0;
+  padding: 10px;
 }
 .about .content ul li {
   padding: 0 0 8px 26px;
@@ -218,6 +223,9 @@ section {
   position: absolute;
   right: -10px;
   top: -27px;
+}
+.testimonials .testimonial-item .testimonial-img:hover {
+  width: 250px;
 }
 .testimonials .testimonial-item h3 {
   font-size: 18px;
@@ -376,10 +384,19 @@ section {
   border: none;
   margin: 0 auto;
   margin-top: 10px;
+  background: linear-gradient(to right, rgb(191, 225, 236), #eef0ef);
 }
 #seccionNoticias .imgNoticia {
   width: 300px;
   margin: 20px 20px;
+}
+#seccionNoticias .imgNoticia:hover {
+  width: 450px;
+}
+
+.btnContacto {
+  background: linear-gradient(to right, rgb(191, 225, 236), #eef0ef);
+  margin: 10px;
 }
 
 /*# sourceMappingURL=estilo.css.map */

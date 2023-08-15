@@ -24,3 +24,9 @@
         margin-bottom: 100px;
     }
 }
+
+@media (max-width: 460px){
+    .testimonial-img {
+        display: none;
+    }
+}
