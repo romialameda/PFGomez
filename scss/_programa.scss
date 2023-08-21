@@ -1,4 +1,14 @@
+@mixin mixinAct{
+    .actividad {
+      display: grid;
+      gap: 30px;
+      margin-bottom: 100px;
+    }
+  }
+
 .actividad {
+    max-width: 1400px;
+    margin: 0 auto;
     .act {
         display: flex;
         flex-direction: column;
@@ -7,8 +17,9 @@
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
         .actImagen {
-            width: 98px;
-            height: 90px;
+            width: 120px;
+            height: 110px;
+            object-fit: contain;
             align-self: center;
             margin: auto;
         }

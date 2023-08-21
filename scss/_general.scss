@@ -7,6 +7,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+html,body{
+  overflow-x: hidden;
+}
+
 .tituloPagina {
   .tituloDos {
     line-height: 1.2em;
@@ -44,5 +48,5 @@ body {
 }
 
 @mixin btnGradiente{
-  background: linear-gradient(to right, rgb(191, 225, 236), #eef0ef);
+  background: linear-gradient(to right, $color_btn1, $color_btn2);
 }

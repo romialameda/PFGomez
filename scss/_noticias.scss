@@ -1,5 +1,5 @@
 #seccionNoticias {
-    margin: 50px;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -33,10 +33,11 @@
 
     .imgNoticia {
         width: 300px;
-        margin: 20px 20px;
+        margin: 20px 100px 20px 110px;
     }
 
     .imgNoticia:hover{
-        width: 450px;
+        transform: scale(1.1);
+        transition: .2s;
     }
 }

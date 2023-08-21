@@ -64,6 +64,7 @@
 
 h2 {
     font-family: $font-family_3;
+    text-align: center;
 }
 
 section {
@@ -138,10 +139,6 @@ section {
 }
 
 .testimonials {
-    .testimonial-wrap {
-        padding-left: 50px;
-    }
-
     .testimonials-carousel {
         overflow: hidden;
     }
