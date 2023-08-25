@@ -54,4 +54,27 @@
     .section-header p {
         font-size: 40px;
     }
+
+    .testimonials .testimonial-item .testimonial-img:hover {
+        width: 170px;
+    }
+}
+
+@media (max-width: 500px) {
+    #seccionNoticias {
+        padding: 30px;
+    }
+    
+    #seccionNoticias .imgNoticia {
+        width: 290px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1023px) {
+    #seccionNoticias {
+        padding: 30px;
+    }
+    #seccionNoticias .imgNoticia {
+        width: 380px;
+    }
 }
